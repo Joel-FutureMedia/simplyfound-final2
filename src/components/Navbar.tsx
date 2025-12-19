@@ -57,6 +57,19 @@ const Navbar = () => {
     }
   };
 
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setIsOpen(false);
+    
+    // Navigate to home if not already there
+    if (location.pathname !== '/') {
+      navigate('/');
+    }
+    
+    // Always scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav
       className={cn(
@@ -68,7 +81,7 @@ const Navbar = () => {
     >
       <div className="container-max mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center" onClick={handleLogoClick}>
             <div
               className={cn(
                 "transition-all duration-300 rounded-lg flex items-center justify-center",
