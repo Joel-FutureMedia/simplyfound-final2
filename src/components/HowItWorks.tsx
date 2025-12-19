@@ -16,7 +16,7 @@ const steps = [
     title: 'Submit Your Assets',
     description:
       'Send us your logo, images, and brand materials. You\'ll receive an email confirmation once we process your submission.',
-    color: 'bg-primary',
+    color: 'bg-accent',
   },
   {
     icon: Sparkles,
