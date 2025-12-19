@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { FileText, Image, Sparkles, ArrowRight } from 'lucide-react';
+import { FileText, Upload, Sparkles, ArrowRight } from 'lucide-react';
 
 const steps = [
   {
@@ -11,7 +11,7 @@ const steps = [
     color: 'bg-accent',
   },
   {
-    icon: Image,
+    icon: Upload,
     number: '02',
     title: 'Submit Your Assets',
     description:
