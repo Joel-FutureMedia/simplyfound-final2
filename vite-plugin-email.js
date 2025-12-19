@@ -121,7 +121,7 @@ export function emailServer() {
           // Send email
           const mailOptions = {
             from: 'joelkalimbwe3@gmail.com',
-            to: ['joel.kalimbwe@futuremedia.com.na', 'yoelowelly@gmail.com'],
+            to: ['joel.kalimbwe@futuremedia.com.na', 'eric.vanzyl@futuremedia.com.na'],
             subject: `New Consultation Request from ${businessName}`,
             html: htmlContent,
             replyTo: email,
