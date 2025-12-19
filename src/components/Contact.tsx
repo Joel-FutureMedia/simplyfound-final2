@@ -1,12 +1,13 @@
 import { useEffect, useRef } from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 import teamImage from '@/assets/team-work.jpg';
+import { cn } from '@/lib/utils';
 
 const contactInfo = [
   {
     icon: Phone,
     label: 'Phone',
-    value: '083 000 1011',
+    value: '+264 83 000 1011',
     href: 'tel:+264830001011',
   },
   {
@@ -98,7 +99,10 @@ const Contact = () => {
                     <div className="text-sm text-muted-foreground mb-1">
                       {item.label}
                     </div>
-                    <div className="font-semibold text-foreground break-words text-sm">
+                    <div className={cn(
+                      "font-semibold text-foreground break-words",
+                      item.label === 'Email' ? "text-xs" : "text-sm"
+                    )}>
                       {item.value}
                     </div>
                   </div>

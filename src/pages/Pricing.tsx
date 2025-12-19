@@ -9,7 +9,7 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 const pricingPlans = [
   {
     name: 'Starter',
-    price: 'N$3,700',
+    price: 'N$3,799',
     description: 'Perfect for small businesses and startups',
     features: [
       'Up to 5 pages',
@@ -17,7 +17,7 @@ const pricingPlans = [
       'Contact form integration',
       'Social media links',
       'Basic SEO optimization',
-      'Domain name registration (.com.na and other domains priced separately)',
+      'Domain name registration (.com.na - other domains priced separately)',
       'Hosting',
       '1 email address',
       'Consultation session',
@@ -38,7 +38,8 @@ const pricingPlans = [
       'Blog/News section',
       'Analytics integration',
       'Content management system',
-      'Hosting and domain name registration',
+      'Hosting and domain name registration (.com.na - other domains priced separately)',
+      'Multiple email addresses',
       'Consultation session',
     ],
     highlighted: true,
@@ -56,7 +57,8 @@ const pricingPlans = [
       'Database management',
       'Priority support',
       'Performance optimization',
-      'Hosting and domain name registration',
+      'Hosting and domain name registration (.com.na - other domains priced separately)',
+      'Multiple email addresses',
       'Custom CMS',
     ],
     highlighted: false,

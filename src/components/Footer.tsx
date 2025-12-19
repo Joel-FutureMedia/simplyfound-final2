@@ -15,7 +15,7 @@ const Footer = () => {
   };
 
   const contactInfo = [
-    { icon: Phone, label: 'Phone', value: '083 000 1011', href: 'tel:+264830001011' },
+    { icon: Phone, label: 'Phone', value: '+264 83 000 1011', href: 'tel:+264830001011' },
     { icon: Mail, label: 'Email', value: 'eric.vanzyl@futuremedia.com.na', href: 'mailto:eric.vanzyl@futuremedia.com.na' },
     { icon: MapPin, label: 'Address', value: 'Future Media offices, Unit 44, Hyper Motor City, Maxwell Street, Windhoek', href: '#' },
   ];
