@@ -13,8 +13,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'eric.vanzyl@futuremedia.com.na',
-    href: 'mailto:eric.vanzyl@futuremedia.com.na',
+    value: 'eric@simplyfound.com.na',
+    href: 'mailto:eric@simplyfound.com.na',
   },
   {
     icon: MapPin,
