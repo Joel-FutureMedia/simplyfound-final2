@@ -13,8 +13,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'eric@simplyfound.com.na',
-    href: 'mailto:eric@simplyfound.com.na',
+    value: 'info@simplyfound.com.na',
+    href: 'mailto:info@simplyfound.com.na',
   },
   {
     icon: MapPin,
