@@ -3,12 +3,12 @@ import nodemailer from 'nodemailer';
 
 // Create transporter
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
+  host: 'mail.simplyfound.com.na',
   port: 587,
   secure: false,
   auth: {
-    user: 'joelkalimbwe3@gmail.com',
-    pass: 'yxdk iwgj rftt beel',
+    user: 'info@simplyfound.com.na',
+    pass: 'Simplyfound@2026',
   },
 });
 
