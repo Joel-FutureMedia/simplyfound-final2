@@ -36,20 +36,7 @@ const Footer = () => {
               websites that help businesses succeed online. Based in Windhoek,
               Namibia.
             </p>
-            <div className="flex gap-4">
-              {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
-                <a
-                  key={social}
-                  href="#"
-                  className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
-                  aria-label={social}
-                >
-                  <span className="text-sm font-bold uppercase">
-                    {social[0]}
-                  </span>
-                </a>
-              ))}
-            </div>
+            
           </div>
 
           {/* Contact Info */}
