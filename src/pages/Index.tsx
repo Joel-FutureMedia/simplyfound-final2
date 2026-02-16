@@ -6,6 +6,7 @@ import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import HowItWorks from '@/components/HowItWorks';
 import Contact from '@/components/Contact';
+import NewsletterSubscription from '@/components/NewsletterSubscription';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -41,6 +42,14 @@ const Index = () => {
         <HowItWorks />
         <Contact />
       </main>
+      
+      {/* Newsletter Subscription Section */}
+      <section className="section-padding bg-background border-t border-border">
+        <div className="container-max mx-auto">
+          <NewsletterSubscription variant="default" />
+        </div>
+      </section>
+      
       <Footer />
     </>
   );

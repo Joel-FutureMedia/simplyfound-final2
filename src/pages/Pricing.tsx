@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import PricingCard from '@/components/PricingCard';
 import ConsultationForm from '@/components/ConsultationForm';
+import NewsletterSubscription from '@/components/NewsletterSubscription';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const pricingPlans = [
@@ -189,6 +190,13 @@ const Pricing = () => {
           </div>
         </section>
       </main>
+
+      {/* Newsletter Subscription Section */}
+      <section className="section-padding bg-background border-t border-border">
+        <div className="container-max mx-auto">
+          <NewsletterSubscription variant="default" />
+        </div>
+      </section>
 
       <Footer />
       <ConsultationForm open={isConsultationOpen} onOpenChange={setIsConsultationOpen} />
