@@ -7,6 +7,7 @@ import Services from '@/components/Services';
 import HowItWorks from '@/components/HowItWorks';
 import Contact from '@/components/Contact';
 import NewsletterSubscription from '@/components/NewsletterSubscription';
+import Faq from '@/components/Faq';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -49,7 +50,9 @@ const Index = () => {
           <NewsletterSubscription variant="default" />
         </div>
       </section>
-      
+
+      <Faq />
+
       <Footer />
     </>
   );

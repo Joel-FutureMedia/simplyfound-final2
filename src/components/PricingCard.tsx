@@ -57,14 +57,26 @@ const PricingCard = ({
       </div>
 
       <div className="mb-6">
-        <span
-          className={cn(
-            'text-4xl font-heading font-bold',
-            highlighted ? 'text-accent' : 'text-foreground'
-          )}
-        >
-          {price}
-        </span>
+        <div className="flex items-baseline gap-2">
+          <span
+            className={cn(
+              'text-4xl font-heading font-bold',
+              highlighted ? 'text-accent' : 'text-foreground'
+            )}
+          >
+            {price}
+          </span>
+          <span
+            className={cn(
+              'text-[0.7rem] uppercase tracking-wide px-2 py-0.5 rounded-full border font-semibold shadow-sm',
+              highlighted
+                ? 'border-accent/70 text-accent-foreground bg-accent/90'
+                : 'border-accent/40 text-accent bg-accent/10'
+            )}
+          >
+            ex-VAT
+          </span>
+        </div>
       </div>
 
       <ul className="space-y-3 mb-8 flex-grow">
