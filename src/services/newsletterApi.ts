@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://emailmarketin.simplyfound.com.na/api';
+const API_BASE_URL = 'https://market.simplyfound.ggff.net/api';
 
 export interface SubscribeResponse {
   success: boolean;
