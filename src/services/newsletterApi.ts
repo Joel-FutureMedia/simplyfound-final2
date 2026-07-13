@@ -1,4 +1,5 @@
-const API_BASE_URL = 'https://market.simplyfound.ggff.net/api';
+//const API_BASE_URL = 'https://market.simplyfound.ggff.net/api';
+const API_BASE_URL = 'http://localhost:8585/api';
 
 export interface SubscribeResponse {
   success: boolean;
