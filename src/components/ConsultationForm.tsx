@@ -5,6 +5,12 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Loader2 } from 'lucide-react';
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 interface ConsultationFormProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
@@ -35,6 +41,7 @@ const ConsultationForm = ({ open, onOpenChange }: ConsultationFormProps) => {
       });
 
       if (response.ok) {
+        window.gtag?.('event', 'ads_conversion_Submit_lead_form_1', {});
         setSubmitStatus('success');
         setFormData({ name: '', businessName: '', email: '', phone: '' });
         setTimeout(() => {
