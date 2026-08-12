@@ -9,20 +9,18 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const pricingPlans = [
   {
-    name: 'Starter',
-    price: 'N$3,799',
-    description: 'Perfect for small businesses and startups',
+    name: 'Hosting',
+    price: 'N$1,599',
+    description: 'Reliable hosting for your website',
+    period: 'per year',
+    pricingText: 'ex-VAT + domain renewal',
     features: [
-      'Up to 5 pages',
-      'Responsive design',
-      'Contact form integration',
-      'Social media links',
-      'Basic SEO optimization',
-      'Domain name registration (.com.na - other domains priced separately)',
-      'Hosting',
-      '1 email address',
-      'Consultation session',
-      'Mobile-friendly',
+      'Website hosting',
+      'WordPress hosting',
+      'SSL certificate',
+      'Website security',
+      'Regular backups',
+      'Server monitoring',
     ],
     highlighted: false,
   },
@@ -101,7 +99,7 @@ const Pricing = () => {
         <title>Pricing - SimplyFound Web Development Namibia</title>
         <meta
           name="description"
-          content="Affordable web development packages in Namibia. Choose from Starter, Professional, or Enterprise plans to get your business online."
+          content="Affordable web development packages in Namibia. Choose from Hosting, Professional, or Enterprise plans to get your business online."
         />
       </Helmet>
 

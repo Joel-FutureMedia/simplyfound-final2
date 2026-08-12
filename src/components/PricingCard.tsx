@@ -7,6 +7,8 @@ interface PricingCardProps {
   price: string;
   description: string;
   features: string[];
+  period?: string;
+  pricingText?: string;
   highlighted?: boolean;
   delay?: number;
 }
@@ -16,6 +18,8 @@ const PricingCard = ({
   price,
   description,
   features,
+  period,
+  pricingText = 'ex-VAT',
   highlighted = false,
   delay = 0,
 }: PricingCardProps) => {
@@ -57,7 +61,7 @@ const PricingCard = ({
       </div>
 
       <div className="mb-6">
-        <div className="flex items-baseline gap-2">
+        <div className="flex items-baseline gap-2 flex-wrap">
           <span
             className={cn(
               'text-4xl font-heading font-bold',
@@ -66,6 +70,16 @@ const PricingCard = ({
           >
             {price}
           </span>
+          {period && (
+            <span
+              className={cn(
+                'text-sm',
+                highlighted ? 'text-primary-foreground/80' : 'text-muted-foreground'
+              )}
+            >
+              {period}
+            </span>
+          )}
           <span
             className={cn(
               'text-[0.7rem] uppercase tracking-wide px-2 py-0.5 rounded-full border font-semibold shadow-sm',
@@ -74,7 +88,7 @@ const PricingCard = ({
                 : 'border-accent/40 text-accent bg-accent/10'
             )}
           >
-            ex-VAT
+            {pricingText}
           </span>
         </div>
       </div>
