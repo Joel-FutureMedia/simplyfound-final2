@@ -26,7 +26,7 @@ const pricingPlans = [
   },
   {
     name: 'Professional',
-    price: 'N$6,799',
+    price: 'N$9,999',
     description: 'Ideal for growing businesses',
     features: [
       'Up to 8 pages',
@@ -45,7 +45,7 @@ const pricingPlans = [
   },
   {
     name: 'Enterprise',
-    price: 'N$12,799',
+    price: 'N$15,999',
     description: 'For large businesses with complex needs',
     features: [
       'Unlimited pages',
