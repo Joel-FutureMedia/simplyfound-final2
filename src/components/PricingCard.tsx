@@ -11,6 +11,8 @@ interface PricingCardProps {
   pricingText?: string;
   highlighted?: boolean;
   delay?: number;
+  startingFrom?: boolean;
+  onCtaClick?: () => void;
 }
 
 const PricingCard = ({
@@ -22,6 +24,8 @@ const PricingCard = ({
   pricingText = 'ex-VAT',
   highlighted = false,
   delay = 0,
+  startingFrom = false,
+  onCtaClick,
 }: PricingCardProps) => {
   return (
     <div
@@ -61,6 +65,16 @@ const PricingCard = ({
       </div>
 
       <div className="mb-6">
+        {startingFrom && (
+          <p
+            className={cn(
+              'text-sm font-medium mb-1',
+              highlighted ? 'text-primary-foreground/80' : 'text-muted-foreground'
+            )}
+          >
+            Starting from
+          </p>
+        )}
         <div className="flex items-baseline gap-2 flex-wrap">
           <span
             className={cn(
@@ -126,7 +140,7 @@ const PricingCard = ({
       <Button
         variant={highlighted ? 'pricingAccent' : 'pricing'}
         size="lg"
-        onClick={() => window.open('https://forms.simplyfound.com.na', '_blank')}
+        onClick={onCtaClick}
       >
         Get Started
       </Button>

@@ -28,6 +28,7 @@ const pricingPlans = [
     name: 'Professional',
     price: 'N$9,999',
     description: 'Ideal for growing businesses',
+    startingFrom: true,
     features: [
       'Up to 8 pages',
       'Advanced responsive design',
@@ -47,6 +48,7 @@ const pricingPlans = [
     name: 'Enterprise',
     price: 'N$15,999',
     description: 'For large businesses with complex needs',
+    startingFrom: true,
     features: [
       'Unlimited pages',
       'Custom design & features',
@@ -160,6 +162,7 @@ const Pricing = () => {
                   key={plan.name}
                   {...plan}
                   delay={index * 150}
+                  onCtaClick={() => setIsConsultationOpen(true)}
                 />
               ))}
             </div>
